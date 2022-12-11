@@ -20,14 +20,16 @@ public class TaskService {
 		taskList.put(task.getId(), task);
 	}
 	
-	public void deleteTask(Task task) {
+	public Boolean deleteTask(Task task) {
 		hasKey(true, task, "deleteTask fail: task doesn't exist.");
 		taskList.remove(task.getId());
+		return true;
 	}
 	
-	public void updateTask(Task task) {
+	public Boolean updateTask(Task task) {
 		hasKey(true, task, "updateTask fail: task doesn't exist.");
 		taskList.put(task.getId(), task);
+		return true;
 	}
 
 	// if flag is false, we are checking that the task doesn't exist before operation

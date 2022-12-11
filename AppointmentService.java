@@ -20,9 +20,10 @@ public class AppointmentService {
 	}
 	
 	// Check if appointment is null and id exists
-	public void deleteAppointment(Appointment app) {
+	public Boolean deleteAppointment(Appointment app) {
 		if(app == null) throw new NullPointerException("appointment is null");
 		if(!list.containsKey(app.getId())) throw new IllegalArgumentException("id: " + app.getId() + " doesn't exist");
 		list.remove(app.getId());
+		return true;
 	}
 }

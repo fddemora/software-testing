@@ -48,4 +48,17 @@ public class ContactServiceTest {
 			service.updateContact(new Contact("0","fellipe2", "demoraes2", new Long("8573638211"), "malden ma"));
 		});
 	}
+	
+	/*
+	 * Adding the below test comments for valid values and coverage above 80%
+	 * The program will create a second branch and turning yellow coverage to green.
+	 */
+	@Test
+	void testValidDeletion(){
+		Assertions.assertTrue(service.deleteContact("1"));
+	}
+	@Test
+	void testValidUpdate() {
+		Assertions.assertTrue(service.updateContact(new Contact("2", "fellipe2", "demoraes2", new Long("8573638211"), "malden ma")));
+	}
 }

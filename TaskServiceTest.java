@@ -69,4 +69,16 @@ class TaskServiceTest {
 			service.updateTask(new Task("test", "test", "test"));
 		});
 	}
+	
+	/*
+	 * For test coverage > 80%, adding valid values to delete and update task service
+	 */
+	@Test
+	void testValidDeleteTaskService() {
+		assertTrue(service.deleteTask(new Task("1", "homework", "algebra 1-50")));
+	}
+	@Test
+	void testValidUpdateTaskService() {
+		assertTrue(service.updateTask(new Task("1", "laundry", "use cold water")));
+	}
 }

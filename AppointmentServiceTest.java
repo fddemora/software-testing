@@ -49,9 +49,14 @@ class AppointmentServiceTest {
 	}
 	
 	@Test
-	void deleteAppDuplicateTest() {
+	void deleteAppNoIdTest() {
 		assertThrows(IllegalArgumentException.class, () -> {
 			service.deleteAppointment(new Appointment("id2", new Date(), "test"));			
 		});
+	}
+	
+	@Test 
+	void deleteAppTest() {
+		assertTrue(service.deleteAppointment(new Appointment("id1", new Date(), "test")));
 	}
 }

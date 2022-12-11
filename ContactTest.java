@@ -96,4 +96,10 @@ class ContactTest {
 			new Contact("test","test","test",new Long("1110006666"),null);
 		} );
 	}
+	
+	@Test
+	void testValidAddress() { // Adding this test to expand test coverage, if value is valid.
+		Contact contact = new Contact("test","test","test",new Long("1110006666"),"test");
+		Assertions.assertTrue(contact.getAddress().equals("test"));
+	}
 }
