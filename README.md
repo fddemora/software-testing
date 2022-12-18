@@ -1,7 +1,7 @@
 # software-testing
 
-How can I ensure that my code, program, or software is functional and secure?
-How do I interpret user needs and incorporate them into a program?
-How do I approach designing software?
 
+In regards to software functionality, taking a agile software development lifecycle where importance is placed on functional specification for example, a test plan in place, and client review is how the software is ensured. Its difficult for a client to look at one component and determine if its what they want, if the component doesn't have a system, so we can create stub data that would act as a the system with the component. The integration would be in sync with the specification requirement. For security, there is already white-box testing, where the software is tested internally to make sure it behaves as expected in the documentation. This is not enough though because its difficult to test every possible scenarios. There are ways to overcome this like using Equivalence Partitioning test technique, but a black-box test should be conducted by a pentester for example. Additionally, a commercial software should be introduced via alpha and beta use. This is in fact what large tech companies like Microsoft is doing with the Windows Insider Program. Perhaps a underrated test method is system maintenance, as time passes, the software will need to perform updates, and there should be planning, documentation, and tests done in regards to this as well.
+<br>
 
+Considering user needs and software design should take place in a software development lifecycle, where the business is kept in the loop to what is happening with the software. In addition to this, user needs are considered as well greatly in a beta release of the software. In beta-release, users give critics to the user experience and they also inform the developers where the direction of the project should go. 
